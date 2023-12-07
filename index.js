@@ -16,6 +16,11 @@ const inversNumber = (text) => {
             reversedText += char;
         }
     }
+    
+    if (currentNumber !== '') {
+        const reversedNumber = currentNumber.split('').reverse().join('');
+        reversedText += reversedNumber;
+    }
 
     return reversedText
 }
